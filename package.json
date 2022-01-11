@@ -1,6 +1,6 @@
 {
   "name": "file-safe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple CLI application to encrypt and decrypt files and directories.",
   "author": "Jake Cyr",
   "module": "index.js",
