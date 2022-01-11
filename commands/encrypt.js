@@ -12,9 +12,12 @@ const encryptCommand = (commander) => {
     .option('-k, --key <key>', 'The key to use for encryption')
     .option('-s, --keep-source', 'Keep the source file')
     .option('-f, --force', 'Blow through any red tape')
-    .option('-m, --maintain-ext', 'Maintain the file extension of the source file')
+    .option(
+      '-m, --maintain-ext',
+      'Maintain the file extension of the source file. Defaults to true'
+    )
     .option('-e, --ext <exts>', 'Encrypt all files with the specified ext')
-    .action(async (fileOrFolder, { key, keepSource, maintainExt, force, ext }) => {
+    .action(async (fileOrFolder, { key, keepSource, maintainExt = true, force, ext }) => {
       while (!key) {
         key = prompt.hide('Enter a password: ');
       }
