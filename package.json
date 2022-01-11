@@ -1,12 +1,14 @@
 {
   "name": "file-safe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple CLI application to encrypt and decrypt files and directories.",
   "author": "Jake Cyr",
   "module": "index.js",
   "license": "ISC",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": {
+    "file-safe": "index.js"
+  },
   "keywords": [
     "encrypt",
     "decrypt",
@@ -19,5 +21,13 @@
     "fs-extra": "^10.0.0",
     "glob": "^7.2.0",
     "prompt-sync": "^4.1.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakecyr/file-safe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jakecyr/file-safe/issues"
+  },
+  "homepage": "https://github.com/jakecyr/file-safe#readme"
 }
